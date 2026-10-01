@@ -22,7 +22,7 @@ const CAMPOS_CONFIG = {
     placeholder: 'Ej. Marco Velazquez',
     type: 'text',
     icon: User,
-    regex: /^[A-Z][a-z]+(\s[A-Z][a-z]+){1,3}$/,//Revisar este regex pendiente tengo suenoooo
+    regex: /^[A-Z][a-z]+(\s[A-Z][a-z]+)*$/,//Revisar este regex pendiente tengo suenoooo
     description: 'Debe comenzar su nombre con mayus.',
     samples:['Marco Velazquez', 'Yahir Soto Campos', 'Mario David Lopez Navares Lopez (invalido)']
   },
@@ -44,7 +44,7 @@ const CAMPOS_CONFIG = {
     placeholder: 'Ej. 6681874904 | 668-1874904 | 668-187-49-04',
     type: 'tel',
     icon: Phone,
-    regex: /^668\-?\d{3}\-?\d{2}-?\d{2}$/,//Revisar este regex pendiente tengo suenoooo no que onda con la lada
+    regex: /^\d{3}\-?\d{3}\-?\d{2}-?\d{2}$/,//Revisar este regex pendiente tengo suenoooo no que onda con la lada
     description: 'Deben ser solo numeros, e ir separados como en los ejemplos.',
     samples:['6681874904', '668-770-51-41', '668-3213-2133 (invalido)']
   },
@@ -55,7 +55,7 @@ const CAMPOS_CONFIG = {
     placeholder: 'Ej. 1,000 | 54,029',
     type: 'text',
     icon: Coins,
-    regex: /^[1-9]\d{0,2}(\.\d{3})*$/,//Revisar este regex pendiente tengo suenoooo
+    regex: /^[1-9]\d{0,2}(\,\d{3})*$/,//Revisar este regex pendiente tengo suenoooo
     description: 'Debe ingresar el numero con separador de miles ",".',
     samples:['978', '10,576', '549023 (invalido)']
   },
