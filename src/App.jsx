@@ -22,7 +22,7 @@ const CAMPOS_CONFIG = {
     placeholder: 'Ej. Marco Velazquez',
     type: 'text',
     icon: User,
-    regex: /^[A-Z][a-z]+(\s[A-Z][a-z]+)[2,]$/,//Revisar este regex pendiente tengo suenoooo
+    regex: /^[A-Z][a-z]+(\s[A-Z][a-z]+)[1,]$/,//Revisar este regex pendiente tengo suenoooo
     description: 'Debe comenzar su nombre con mayus.',
     samples:['Marco Velazquez', 'Yahir Soto Campos', 'Mario David Lopez Navares Lopez (invalido)']
   },
